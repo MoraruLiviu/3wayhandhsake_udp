@@ -27,3 +27,5 @@ The header is extended to contain the sequence number in 2 bytes, acknowledgemen
  The server also must confirm that it has recieved every individual file for the client to send the next one.
 
  If at any point any packet is lost and an answer is not recieved in the timeout period or the wrong answer is recieved by either server, the packet is sent again.
+
+ In order to simulate packet loss, tc qdisc was used.
