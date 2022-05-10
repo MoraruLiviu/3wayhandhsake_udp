@@ -1,0 +1,7 @@
+python3 client.py
+
+ifconfig
+
+sudo tc qdisc add dev lo root netem loss 40%
+
+sudo tc qdisc delete dev lo root netem loss 40%
